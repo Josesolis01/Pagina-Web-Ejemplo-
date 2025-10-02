@@ -16,7 +16,7 @@ El objetivo principal es servir como una demostración de mis habilidades en el 
 | **Base de Datos** | **MySQL/MariaDB** | Configuración de la conexión y gestión de la inicialización (ejecución de *scripts* SQL) mediante comandos de *framework*. |
 | **Seguridad/Auth** | Implementación de **Login** y **Registro** con contraseñas y gestión de sesiones. |
 | **CRUD** | Endpoints de **`/books`** y **`/users`** | Dominio de operaciones **CRUD** completas para gestionar recursos (esencial para la gestión de archivos y edición). |
-| **Arquitectura** | Configuración unificada | Gestión de variables críticas de configuración (puerto, prefijo API, `SECRET_KEY`). |
+
 
 ---
 
