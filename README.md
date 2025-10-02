@@ -29,19 +29,7 @@ Asegúrate de tener instalados:
 * Una instancia de **MySQL** o **MariaDB**
 * El framework **`silence`**.
 
-### 2. Configuración de Conexión
-
-El proyecto utiliza las siguientes credenciales para conectarse a la base de datos:
-
-| Configuración | Valor |
-| :--- | :--- |
-| **Base de Datos** | `users` |
-| **Host** | `127.0.0.1` |
-| **Puerto** | `3306` |
-| **Usuario** | `root` |
-| **Contraseña** | `root` |
-
-### 3. Inicialización de la Base de Datos
+### 2. Inicialización de la Base de Datos
 
 Para crear la base de datos y las tablas necesarias (`Users` y `Books`) a partir de los *scripts* definidos (`createdb.sql`, `books.sql`), utiliza el comando de inicialización del *framework*:
 
@@ -52,7 +40,7 @@ silence createdb
 
 > Nota: La tabla Users se precarga con 5 usuarios, todos con la contraseña: `iissi`.
 
-### 4. Inicio del Servidor
+### 3. Inicio del Servidor
 
 Una vez inicializada la base de datos, puedes levantar el servidor de la aplicación:
 
@@ -60,9 +48,6 @@ Una vez inicializada la base de datos, puedes levantar el servidor de la aplicac
 # Inicia la API y el servidor web.
 silence run
 ```
-
-La aplicación estará disponible en: [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
-
 ---
 
 ## 🌐 Endpoints de la API (v1)
