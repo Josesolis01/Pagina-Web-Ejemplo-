@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <link rel=" stylesheet " href="css/style.css">
+    <script src="js/utils/include.js"> </script>
+    <script src="js/serie_detail.js" type="module"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/header.js" type="module"></script>
+    <title>Document</title>
+</head>
+
+<body class="dark">
+    <div id="page-header"></div>
+    <div class="container">
+        <div id="errors"></div>
+        <div class="row text-center">
+            <div class="col-md" id="photo-details-column"></div>
+
+            <div class="col-md-3" id="actions-col">
+                <div>
+                    <button id="button-edit" class="btn btn-primary">Edit this serie</button>
+                    <button id="button-delete" class="btn btn-danger">Delete this serie</button>
+                </div>
+            </div>
+        </div>
+        </br>
+        <div class="row text-center">
+            <div class="col-md">
+                <a href="series.html" class="btn btn-primary">Return to the gallery</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+{
+    "getAll": {
+        "route": "/series",
+        "method": "GET",
+        "sql": "SELECT * FROM series",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ],
+        "description": "Gets all series"
+    },
+    "getById": {
+        "route": "/series/$photoId",
+        "method": "GET",
+        "sql": "SELECT * FROM series WHERE photoId = $photoId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ],
+        "description": "Gets an entry from 'series' by its primary key"
+    },
+    "create": {
+        "route": "/series",
+        "method": "POST",
+        "sql": "INSERT INTO series(title, platform, releaseDate, numSeasons, imageUrl) VALUES ($title, $platform, $releaseDate, $numSeasons, $imageUrl)",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ],
+        "description": "Creates a new entry in 'series'",
+        "request_body_params": [
+            "title",
+            "platform",
+            "releaseDate",
+            "numSeasons",
+            "imageUrl"
+        ]
+    },
+    "update": {
+        "route": "/series/$photoId",
+        "method": "PUT",
+        "sql": "UPDATE series SET title = $title, platform = $platform, releaseDate = $releaseDate, numSeasons = $numSeasons, imageUrl = $imageUrl WHERE photoId = $photoId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ],
+        "description": "Updates an existing entry in 'series' by its primary key",
+        "request_body_params": [
+            "title",
+            "platform",
+            "releaseDate",
+            "numSeasons",
+            "imageUrl"
+        ]
+    },
+    "delete": {
+        "route": "/series/$photoId",
+        "method": "DELETE",
+        "sql": "DELETE FROM series WHERE photoId = $photoId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ],
+        "description": "Deletes an existing entry in 'series' by its primary key"
+    }
+}
